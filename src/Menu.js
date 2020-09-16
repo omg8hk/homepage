@@ -5,7 +5,7 @@ class Menu extends React.Component {
             <nav id="menu" >
                 <ul className="links" >
                     <li>
-                        <a href="/">Home</a>
+                        <a href={process.env.PUBLIC_URL}>Home</a>
                     </li> 
                     {this.menu()} 
                 </ul> 
@@ -15,11 +15,11 @@ class Menu extends React.Component {
     menu = () => {
         if (this.props.arrM.length > 0)
             return (
-                this.props.arrM.map((item, i) => <li key={i}><a href={item.link}>{item.title}</a></li>)
+                this.props.arrM.map((item, i) => <li key={i}><a href={item.link.indexOf('http')>-1?item.link:process.env.PUBLIC_URL+"/"+item.link}>{item.title}</a></li>)
             );
         else
             return (
-                this.props.arr.map((item, i) => <li key={i}><a href={item.link}>{item.title}</a></li>)
+                this.props.arr.map((item, i) => <li key={i}><a href={item.link.indexOf('http')>-1?item.link:process.env.PUBLIC_URL+"/"+item.link}>{item.title}</a></li>)
             );
     }
 }

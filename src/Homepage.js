@@ -1,7 +1,6 @@
 import React from 'react';
 import'./css/main.css';
 import'./css/font-awesome.css';
-import'./css/myStyle2.css';
 import Banner from './Banner';
 import Menu from './Menu';
 import Footer from './Footer';

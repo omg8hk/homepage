@@ -1,4 +1,6 @@
 import React from 'react';
+import'./css/myStyle2.css';
+
 class App extends React.Component{
     componentDidUpdate(){
         // if(this.props.arr!==[]&&!this.isScript){
@@ -21,7 +23,7 @@ class App extends React.Component{
                     if(item.page===this.props.page.toUpperCase()){
                         return(
                             <article key={i}>
-                                <img data-src={require("./slide/"+this.props.page+"/slide0"+item.seq+this.props.jpgName)} className="lazyload" alt=""/>
+                                <img data-src={process.env.PUBLIC_URL+"/slide/"+this.props.page+"/slide0"+item.seq+this.props.jpgName} alt=""/>
                                 <div className="inner">
                                     <header>
                                         <p style={{'fontSize':'2vw'}}>{item.sentence}</p>

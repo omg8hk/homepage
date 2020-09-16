@@ -41,7 +41,7 @@ class GridAccordion extends React.Component{
                                                                 <h2>[{item.title}]</h2>
                                                             </header>
                                                             <footer className="align-center">
-                                                                <a href={item.link} className="button alt">Learn More</a>
+                                                                <a href={item.link.indexOf('http')>-1?item.link:process.env.PUBLIC_URL+"/"+item.link} className="button alt">Learn More</a>
                                                             </footer>
                                                         </div>
                                                     </div>
@@ -60,7 +60,7 @@ class GridAccordion extends React.Component{
                                                                 <h2>[{item.title}]</h2>
                                                             </header>
                                                             <footer className="align-center">
-                                                                <a href={item.link} className="button alt">Learn More</a>
+                                                                <a href={item.link.indexOf('http')>-1?item.link:process.env.PUBLIC_URL+"/"+item.link} className="button alt">Learn More</a>
                                                             </footer>
                                                         </div>
                                                     </div>
