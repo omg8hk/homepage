@@ -204,7 +204,7 @@ var settings = {
                         $slide
 							.css('background-image', 'url("' + $img.attr('data-src') + '")')
                             .addClass('lazy')
-                            .attr('data-bg','url("' + $img.attr('src') + '")')
+                            .attr('data-bg','url("' + $img.attr('data-src') + '")')
 							.css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
 
                     }else
