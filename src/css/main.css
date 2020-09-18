@@ -2898,7 +2898,7 @@
 			}
 
 			.wrapper.style2 a {
-				color: rgb(255,239,225);
+				color: #616161;
 			}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
@@ -3947,7 +3947,6 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 

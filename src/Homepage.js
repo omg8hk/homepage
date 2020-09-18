@@ -43,11 +43,15 @@ class Homepage extends React.Component{
         fetch("https://script.google.com/macros/s/AKfycbz_bCXOHyJKO9j5Qx4COWRD1zYgCoClrbtRyIHZDOMiMTX1Ar-L/exec?sheet="+this.page.toUpperCase())
         .then(response => response.json())
         .then((jsonData) => {
-            if(jsonData.menu)
-                this.setState({pageArr:jsonData.page,menuArr:jsonData.menu,slideArr:jsonData.slide,dataIsReturned:true});
-            else
-                this.setState({pageArr:jsonData.page,slideArr:jsonData.slide,dataIsReturned:true});
-
+            var image = new Image()
+            image.onload = ()=> {
+                if(jsonData.menu)
+                    this.setState({pageArr:jsonData.page,menuArr:jsonData.menu,slideArr:jsonData.slide,dataIsReturned:true});
+                else
+                    this.setState({pageArr:jsonData.page,slideArr:jsonData.slide,dataIsReturned:true});
+            }
+            image.src = process.env.PUBLIC_URL+"/slide/"+this.page+"/slide0"+jsonData.slide[0].seq+this.jpgName;
+            
         })
         .catch((error) => {
             console.error(error);
