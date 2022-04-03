@@ -39,7 +39,7 @@ class Homepage extends React.Component{
     else
         this.jpgName=".jpg"
     }
-    componentWillMount(){
+    componentDidMount(){
         fetch("https://script.google.com/macros/s/AKfycbz_bCXOHyJKO9j5Qx4COWRD1zYgCoClrbtRyIHZDOMiMTX1Ar-L/exec?sheet="+this.page.toUpperCase())
         .then(response => response.json())
         .then((jsonData) => {
