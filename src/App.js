@@ -18,6 +18,7 @@ class App extends React.Component{
         <Route path="/BAM" render={()=><Homepage page="BAM"/>} />
         <Route path="/SG" render={()=><Homepage page="SG"/>} />
         <Route path="/BONVOYAGE" exact render={()=><Homepage page="BONVOYAGE"/>} />
+        <Route path="/DUNDUNDANCE" exact render={()=><Homepage page="DUNDUNDANCE"/>} />
         <Route component={() => (<div>404 Not found </div>)} />
         {/* <Route path="/UpDaTe" exact component={Update} /> */}
       </Switch>
