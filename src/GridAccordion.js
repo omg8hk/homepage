@@ -52,7 +52,7 @@ class GridAccordion extends React.Component{
                                                 <div key={i}>
                                                     <div className="box">
                                                         <div className="image fit">
-                                                            <LazyLoadImage src={process.env.PUBLIC_URL+"/images/"+item.image.split(".")[0]+this.props.jpgName} alt="" effect="blur"/>
+                                                            <LazyLoadImage src={item.image.indexOf('http')>-1?item.image:process.env.PUBLIC_URL+"/images/"+item.image.split(".")[0]+this.props.jpgName} alt="" effect="blur"/>
                                                         </div>
                                                         <div className="content">
                                                             <header className="align-center">
