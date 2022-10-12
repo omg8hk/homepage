@@ -2,7 +2,7 @@
     "name": "homepage",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://omg8hk.com/",
+    "homepage": "https://omg8hk.co/",
     "dependencies": {
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
@@ -13,7 +13,7 @@
         "react-dom": "^16.13.1",
         "react-lazy-load-image-component": "^1.5.0",
         "react-router-dom": "^5.2.0",
-        "react-scripts": "^3.4.3"
+        "react-scripts": "^3.4.4"
     },
     "scripts": {
         "predeploy": "npm run build",
