@@ -5,7 +5,7 @@ class Menu extends React.Component {
             <nav id="menu" >
                 <ul className="links" >
                     <li>
-                        <a href="https://omg8hk.com">Home</a>
+                        <a href="https://omg8hk.co">Home</a>
                     </li> 
                     {this.menu()} 
                 </ul> 
