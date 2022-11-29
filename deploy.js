@@ -10,6 +10,8 @@
         "/SG",
         "/BONVOYAGE",
         "/DUNDUNDANCE",
+        "/RL",
+        "/SELFISH",
     ]
     // 给每个route都新建一个文件夹，把index.html拷贝进去
     const fs = require('fs-extra')
